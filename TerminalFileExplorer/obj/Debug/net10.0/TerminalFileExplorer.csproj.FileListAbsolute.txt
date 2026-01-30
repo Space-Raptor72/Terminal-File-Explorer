@@ -1,0 +1,15 @@
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\bin\Debug\net10.0\TerminalFileExplorer.exe
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\bin\Debug\net10.0\TerminalFileExplorer.deps.json
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\bin\Debug\net10.0\TerminalFileExplorer.runtimeconfig.json
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\bin\Debug\net10.0\TerminalFileExplorer.dll
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\bin\Debug\net10.0\TerminalFileExplorer.pdb
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.AssemblyInfoInputs.cache
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.AssemblyInfo.cs
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.csproj.CoreCompileInputs.cache
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.sourcelink.json
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.dll
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\refint\TerminalFileExplorer.dll
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.pdb
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\TerminalFileExplorer.genruntimeconfig.cache
+C:\Users\liamk\Desktop\Terminal File Explorer\TerminalFileExplorer\obj\Debug\net10.0\ref\TerminalFileExplorer.dll

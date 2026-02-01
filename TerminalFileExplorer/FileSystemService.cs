@@ -12,5 +12,10 @@ namespace TerminalFileExplorer
         {
             return Directory.GetFiles(path); 
         }
+
+        public string GetNextDirectory(string dir)
+        {
+            return Path.GetFullPath(dir); 
+        }
     }
 }

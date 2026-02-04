@@ -11,41 +11,31 @@ namespace TerminalFileExplorer
             Console.Clear();  
         }
 
-         public void DisplayDirectory(string path, string[] dirs, string[] files, int selectedIndex)
-        { 
+        public void DisplayDirectory(string path, string[] dirs, string[] files, int selectedIndex)
+        {
 
-            string[] entireDirectory = dirs.Concat(files).ToArray();
-            int chunks = (int)Math.Ceiling(((double)entireDirectory.Length  / (double)Console.WindowHeight)); 
-            
-            int startingIndex = 0; 
-            for(int x = 1; x <= chunks; x++)
+           string[] entireDirectory = dirs.Concat(files).ToArray();
+           int page = selectedIndex / (Console.WindowHeight -1);
+           int startingIndex = page * (Console.WindowHeight -1);
+           int endingIndex = startingIndex + (Console.WindowHeight -1); 
+
+           for(int i = startingIndex; i < endingIndex; i++)
             {
-                
-                if(selectedIndex < (Console.WindowHeight * x) - 1)
-                {
-                    if(x == 1){break;}
-                    startingIndex = ((x - 1) * Console.WindowHeight) - 1;
-                    break;
-                }
-            }
-         
-            for(int i = startingIndex; i < (startingIndex + (Console.WindowHeight)) - 1; i++)
-            {
-                if(i == entireDirectory.Length){break;}
+                if(i >= entireDirectory.Length){break;}
                 if(i == selectedIndex)
                 {
-                     Console.BackgroundColor = ConsoleColor.Cyan;
-                     System.Console.Write($"> {Path.GetFileName(entireDirectory[i])}, {i}");
-                     Console.ResetColor();
-                     System.Console.WriteLine();
+                    Console.BackgroundColor = ConsoleColor.White;
+                    System.Console.Write($"> {Path.GetFileName(entireDirectory[i])}");
+                    Console.ResetColor(); 
+                    System.Console.WriteLine();
                 }
                 else
                 {
-                    System.Console.WriteLine($"{Path.GetFileName(entireDirectory[i])}, {i}");
+                    System.Console.WriteLine($"{Path.GetFileName(entireDirectory[i])}");
                 }
             }
-          
         }
+
 
         public void MainLoop(ref string CurrentDirectory, FileSystemService File_Service_Object, CommandHandler commandHandler)
         {

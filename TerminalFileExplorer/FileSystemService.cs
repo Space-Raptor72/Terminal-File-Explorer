@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+
 namespace TerminalFileExplorer
 {
     class FileSystemService
@@ -16,6 +19,22 @@ namespace TerminalFileExplorer
         public string GetNextDirectory(string dir)
         {
             return Path.GetFullPath(dir); 
+        }
+
+        public void OpenFile(string file)
+        {
+            try{
+                var process = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = file,
+                        UseShellExecute = true
+                    }
+                    
+                };
+                process.Start();
+            }catch(Exception e){System.Console.WriteLine(e);}
         }
     }
 }

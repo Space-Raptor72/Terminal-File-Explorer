@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liamk\\Desktop\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj": {}
+    "C:\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liamk\\Desktop\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj": {
+    "C:\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liamk\\Desktop\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj",
+        "projectUniqueName": "C:\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj",
         "projectName": "TerminalFileExplorer",
-        "projectPath": "C:\\Users\\liamk\\Desktop\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj",
+        "projectPath": "C:\\Terminal File Explorer\\TerminalFileExplorer\\TerminalFileExplorer.csproj",
         "packagesPath": "C:\\Users\\liamk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liamk\\Desktop\\Terminal File Explorer\\TerminalFileExplorer\\obj\\",
+        "outputPath": "C:\\Terminal File Explorer\\TerminalFileExplorer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\liamk\\AppData\\Roaming\\NuGet\\NuGet.Config"

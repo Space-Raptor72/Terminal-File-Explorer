@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TerminalFileExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab6a007e543cca0e4c29a1a2638d00b20f3cc993")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73c9047bffa21d9a2675d81e45d0ab7eda8cefc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TerminalFileExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TerminalFileExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

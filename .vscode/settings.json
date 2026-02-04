@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "TerminalFileExplorer.slnx"
+    "dotnet.defaultSolution": "TerminalFileExplorer.slnx",
+    "dotnet.console.useExternalConsole": true
 }
+

@@ -49,12 +49,14 @@ namespace TerminalFileExplorer
             {
                 
                 DisplayDirectory(CurrentDirectory, dirs, files, selectedIndex);
+                try{
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    if(key.Key == ConsoleKey.DownArrow){selectedIndex++;}
+                    else if(key.Key == ConsoleKey.UpArrow){selectedIndex--;}
+                    else if(key.Key == ConsoleKey.RightArrow){commandHandler.Right_Arrow(ref CurrentDirectory, ref dirs, ref files, selectedIndex); selectedIndex = 0;}
+                    else if(key.Key == ConsoleKey.LeftArrow){commandHandler.Left_Arrow(ref CurrentDirectory, ref dirs, ref files); selectedIndex = 0;}
+                }catch{continue;}
 
-                ConsoleKeyInfo key = Console.ReadKey(true);
-                if(key.Key == ConsoleKey.DownArrow){selectedIndex++;}
-                else if(key.Key == ConsoleKey.UpArrow){selectedIndex--;}
-                else if(key.Key == ConsoleKey.RightArrow){commandHandler.Right_Arrow(ref CurrentDirectory, ref dirs, ref files, selectedIndex); selectedIndex = 0;}
-                else if(key.Key == ConsoleKey.LeftArrow){commandHandler.Left_Arrow(ref CurrentDirectory, ref dirs, ref files); selectedIndex = 0;}
 
 
                 if(selectedIndex < 0){selectedIndex = (dirs.Length + files.Length) - 1;}

@@ -47,7 +47,7 @@ namespace TerminalFileExplorer
           
         }
 
-        public void MainLoop(ref string CurrentDirectory, FileSystemService File_Service_Object)
+        public void MainLoop(ref string CurrentDirectory, FileSystemService File_Service_Object, CommandHandler commandHandler)
         {
           
             string[] dirs = File_Service_Object.ScanForDirectory(CurrentDirectory); 
@@ -63,20 +63,8 @@ namespace TerminalFileExplorer
                 ConsoleKeyInfo key = Console.ReadKey(true);
                 if(key.Key == ConsoleKey.DownArrow){selectedIndex++;}
                 else if(key.Key == ConsoleKey.UpArrow){selectedIndex--;}
-                else if(key.Key == ConsoleKey.RightArrow)
-                {
-                    if(selectedIndex < dirs.Length)
-                    {
-                        CurrentDirectory = File_Service_Object.GetNextDirectory(dirs[selectedIndex]);
-                        dirs = File_Service_Object.ScanForDirectory(CurrentDirectory);
-                        files = File_Service_Object.ScanForFiles(CurrentDirectory);
-                        selectedIndex = 0;  
-                    }
-                    else
-                    {
-                        File_Service_Object.OpenFile(Path.GetFullPath(files[(selectedIndex - dirs.Length)])); 
-                    }
-                }
+                else if(key.Key == ConsoleKey.RightArrow){commandHandler.Right_Arrow(ref CurrentDirectory, ref dirs, ref files, selectedIndex); selectedIndex = 0;}
+                else if(key.Key == ConsoleKey.LeftArrow){commandHandler.Left_Arrow(ref CurrentDirectory, ref dirs, ref files); selectedIndex = 0;}
 
 
                 if(selectedIndex < 0){selectedIndex = (dirs.Length + files.Length) - 1;}

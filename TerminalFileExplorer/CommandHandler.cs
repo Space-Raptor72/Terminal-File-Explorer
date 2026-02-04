@@ -25,5 +25,16 @@ namespace TerminalFileExplorer
                 File_Service_Object.OpenFile(Path.GetFullPath(files[(selectedIndex - dirs.Length)])); 
             }
         }
+
+        public void Left_Arrow(ref string CurrentDirectory, ref string[] dirs, ref string[] files)
+        {
+            try{
+            CurrentDirectory = Directory.GetParent(CurrentDirectory).FullName;
+            }catch{CurrentDirectory = "C:\\";}
+
+            dirs = File_Service_Object.ScanForDirectory(CurrentDirectory);
+            files = File_Service_Object.ScanForFiles(CurrentDirectory);  
+            
+        }
     }
 }
